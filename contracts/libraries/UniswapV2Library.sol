@@ -61,7 +61,7 @@ library UniswapV2Library {
 
     /**
         @dev 根据比例由一种资产计算另一种资产的值
-        @notice: 如果不涉及交易费用的话，此函数将返回给您代币 A 兑换得到的代币 B
+        @notice: 如果不涉及交易费用的话，此函数将返回给您代币 A 兑换得到的代币 B；该周边合约为注入流动性时使用
         @param amountA 传入某tokenA的资产数量
         @param reserveA 交易对中tokenA的储备量
         @param reserveB 交易对中tokenB的储备量
@@ -76,7 +76,7 @@ library UniswapV2Library {
 
     /**
         @dev A/B 交易对中卖出 A 资产，计算买进的 B 资产的数量
-        @notice: 重要：：：手续费从卖出的资产中扣除，这里为千之分三的交易手续费
+        @notice: 重要!!!：手续费从卖出的资产中扣除，这里为千之分三的交易手续费
         @param amountIn 传入某tokenA的资产数量
         @param reserveIn 交易对中tokenA的储备量，传入tokenA前；
         @param reserveOut 交易对中tokenB的储备量，传入tokenA前；
